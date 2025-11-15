@@ -61,7 +61,7 @@
 
     .nav-logo {
       font-weight: 600;
-      color: #58a6ff;
+      color: #cfd5db;
       text-decoration: none;
       font-size: 1.1rem;
     }
@@ -89,7 +89,7 @@
       margin-top: 0;
       margin-bottom: 1rem;
       font-size: 1.6rem;
-      color: #58a6ff;
+      color: #ced3d8;
     }
 
     /* -------------------------------------- */
@@ -104,18 +104,19 @@
       text-align: center;
       padding-top: 4rem;
       padding-bottom: 4rem;
+      background: linear-gradient(135deg, #e0e0e0, #a0a0a0);
     }
 
     .hero-title {
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: #58a6ff;
+      color: #393a3b;
     }
 
     .hero-content {
       max-width: 700px;
       margin: 0 auto;
-      color: #e6edf3;
+      color: #3e4042;
     }
 
     /* -------------------------------------- */
@@ -130,6 +131,8 @@
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+      text-align: center;
+      background: linear-gradient(135deg, #e0e0e0, #a0a0a0);
     }
 
     .about-image {
@@ -143,6 +146,47 @@
       margin: 0 auto;
     }
 
+    .about-text p {
+      margin-bottom: 1rem;
+      color: #3e4042;
+    }
+
+    .about-features {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .about-features li {
+      background-color: #1f2937;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+      display: inline-block;
+      font-size: 0.95rem;
+    }
+
+    .about-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .about-button {
+      padding: 0.6rem 1.2rem;
+      background-color: #6e94c0;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+
+    .about-button:hover {
+      background-color: #1c6ed0;
+    }
     /* -------------------------------------- */
     /* CSS:ABOUT-END                          */
     /* -------------------------------------- */
@@ -154,6 +198,7 @@
     .section-skills {
       max-width: 700px;
       margin: 0 auto;
+      
     }
 
     .skill-list {
@@ -191,7 +236,7 @@
     .project-card h3 {
       margin-top: 0;
       margin-bottom: 0.5rem;
-      color: #58a6ff;
+      color: #8eb5e2;
     }
 
     /* -------------------------------------- */
@@ -232,6 +277,7 @@
       .section-about {
         flex-direction: row;
         align-items: center;
+        text-align: left;
       }
 
       .about-image {
@@ -267,7 +313,7 @@
     <!-- =========================== -->
     <header class="site-header">
       <nav class="nav container">
-        <a href="#hero" class="nav-logo">Your Name · Frontend Dev</a>
+        <a href="#hero" class="nav-logo">Anya · Frontend Dev</a>
         <div class="nav-links">
           <a class="nav-link" href="#hero">首頁</a>
           <a class="nav-link" href="#about">關於我</a>
@@ -296,15 +342,22 @@
       <!-- SECTION:ABOUT-START -->
       <section id="about" class="section section-about" aria-labelledby="about-heading">
         <div class="container">
-          <div class="about-image">
-
-          </div>
           <div class="about-text">
-            <h2 id="about-heading" class="section-title">關於我（占位區）</h2>
-            <p>這裡目前是 About 區的占位內容，未來會透過 Section SDD 生成更完整的個人介紹內容。</p>
-            <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
-            <img src="images/minh-pham-IisDPFNUS4k-unsplash.jpg" alt="開發者的桌面工作空間" loading="lazy">
+            <h2 id="about-heading" class="section-title">關於我</h2>
+            <p>我目前是一名前端工程師，專注於 HTML、CSS、RWD 以及簡單的 JavaScript，並且偶爾接教學或專案開發。</p>
+            <p>我重視溝通，喜歡教學，也喜歡把事情講清楚，讓合作順暢且高效。</p>
+            <ul class="about-features">
+              <li>快速完成前端頁面設計與切版</li>
+              <li>提供前端技術指導與教學</li>
+              <li>協助優化使用者體驗與 RWD 整合</li>
+            </ul>
+            <div class="about-buttons">
+              <a href="#projects" class="about-button">查看作品集</a>
+              <a href="#contact" class="about-button">聯絡我</a>
+              <img src="images/minh-pham-IisDPFNUS4k-unsplash.jpg" alt="工程師在電腦前工作" loading="lazy">
+            </div>
           </div>
+
         </div>
       </section>
       <!-- SECTION:ABOUT-END -->
